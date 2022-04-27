@@ -67,7 +67,7 @@ classifier = tf.estimator.DNNClassifier(
 
 # now we train the model not to fight o lol, to classify
 classifier.train(
-    input_fn=lambda: input_fn(train,y_train,training=True), # to reduce function conflicts we used lamba, not otunba lamba, i'm too funny abeg
+    input_fn=lambda: input_fn(train,y_train,training=True), # to reduce function conflicts we used lamba
     steps=5000)
 
 #evaluate the model
